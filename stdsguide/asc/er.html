@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.9">
-<title>OGC Maritime Limits and Boundaries Pilot Project</title>
+<title>Guide to USe of Marine Geospatial Standards in the Marine Domain</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,7 +437,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body id="bibtexAttributes" class="book">
 <div id="header">
-<h1>OGC Maritime Limits and Boundaries Pilot Project</h1>
+<h1>Guide to USe of Marine Geospatial Standards in the Marine Domain</h1>
 </div>
 <div id="content">
 <div id="preamble">
@@ -458,28 +458,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Reference URL for this document: <a href="http://www.opengis.net/doc/PER/t14-ID" class="bare">http://www.opengis.net/doc/PER/t14-ID</a></p>
 </div>
 <div class="paragraph">
-<p>Category: OGC Public Engineering Report</p>
+<p>Category: OGC Public Document</p>
 </div>
 <div class="paragraph">
 <p>Editor: Jonathan Pritchard IIC technologies</p>
 </div>
 <div class="paragraph">
-<p>Title: OGC Maritime Limits and Boundaries Pilot Project</p>
+<p>Title: Guide to USe of Marine Geospatial Standards in the Marine Domain</p>
 </div>
 <hr>
 <div class="paragraph">
-<div class="title"><strong class="big">OGC Public Engineering Report</strong></div>
+<div class="title"><strong class="big">OGC Public Document</strong></div>
 <p><strong>COPYRIGHT</strong></p>
 </div>
 <div class="paragraph">
-<p>Copyright © 2018 Open Geospatial Consortium.
+<p>Copyright © 2019 Open Geospatial Consortium.
 To obtain additional rights of use, visit <a href="http://www.opengeospatial.org/" class="bare">http://www.opengeospatial.org/</a></p>
 </div>
 <div class="paragraph">
 <p><strong>WARNING</strong></p>
 </div>
 <div class="paragraph">
-<p>This document is not an OGC Standard. This document is an OGC Public Engineering Report created as a deliverable in an OGC Interoperability Initiative and is not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard. Further, any OGC Public Engineering Report should not be referenced as required or mandatory technology in procurements. However, the discussions in this document could very well lead to the definition of an OGC Standard.</p>
+<p>This document is not an OGC Standard. This document is an OGC Public Document created as a deliverable in an OGC Interoperability Initiative and is not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard. Further, any OGC Public Document should not be referenced as required or mandatory technology in procurements. However, the discussions in this document could very well lead to the definition of an OGC Standard.</p>
 </div>
 <div style="page-break-after: always;"></div>
 <div class="paragraph">
@@ -527,92 +527,41 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_this_document">5. This Document</a></li>
 <li><a href="#_background_2">6. Background</a>
 <ul class="sectlevel2">
-<li><a href="#_unclos">6.1. UNCLOS</a></li>
-<li><a href="#_iho_s_121_history">6.2. IHO / S-121 history</a></li>
+<li><a href="#_iho_ogc_history">6.1. IHO / OGC History</a></li>
+<li><a href="#_structure_of_document">6.2. Structure of Document</a></li>
 </ul>
 </li>
-<li><a href="#_ogc_pilot_project">7. OGC Pilot Project</a>
+<li><a href="#_specific_topics">7. Specific Topics</a>
 <ul class="sectlevel2">
-<li><a href="#_pilot_project_objectives_and_goals">7.1. Pilot Project objectives and Goals</a></li>
-<li><a href="#_structure_of_project">7.2. Structure of project</a></li>
+<li><a href="#_interoperability">7.1. Interoperability</a></li>
+<li><a href="#_encodings">7.2. Encodings</a></li>
+<li><a href="#_topology">7.3. Topology</a></li>
+<li><a href="#_terms_definitions_and_the_registry">7.4. Terms, Definitions and the Registry</a></li>
+<li><a href="#_document_contributor_contact_points_2">7.5. Document contributor contact points</a></li>
 </ul>
 </li>
-<li><a href="#_deliverables">8. Deliverables</a>
+<li><a href="#ExampleClause">8. Example Clause</a>
 <ul class="sectlevel2">
-<li><a href="#_gml_application_schema">8.1. GML Application schema</a>
+<li><a href="#_headlines">8.1. Headlines</a></li>
+<li><a href="#_figures">8.2. Figures</a></li>
+<li><a href="#_tables">8.3. Tables</a></li>
+<li><a href="#RecommendedAsciidocEnvironment">8.4. Recommended Asciidoc Environment</a>
 <ul class="sectlevel3">
-<li><a href="#_background_to_gml_as_for_s_121">8.1.1. Background to GML AS for S-121</a></li>
-<li><a href="#_structure_of_schema">8.1.2. Structure of schema</a></li>
-<li><a href="#_example_uses">8.1.3. Example uses</a></li>
+<li><a href="#_installation_on_macos_and_linux">8.4.1. Installation on MacOS and Linux</a></li>
+<li><a href="#_installation_on_windows">8.4.2. Installation on Windows</a></li>
+<li><a href="#_using_asciidoctor_with_atom">8.4.3. Using Asciidoctor with Atom</a></li>
 </ul>
 </li>
-<li><a href="#_client_sdi">8.2. Client SDI</a>
-<ul class="sectlevel3">
-<li><a href="#_current_state">8.2.1. Current state</a></li>
-<li><a href="#_user_perspective">8.2.2. User perspective</a></li>
+<li><a href="#_asciidoc_conversion">8.5. Asciidoc Conversion</a></li>
+<li><a href="#_source_code">8.6. Source Code</a></li>
+<li><a href="#_asciidoctor_syntax_help">8.7. Asciidoc(tor) Syntax Help</a></li>
+<li><a href="#_citations">8.8. Citations</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#_interoperability_testing">9. Interoperability Testing</a>
+<li><a href="#MathExample">9. Example using equations in asciidoc</a>
 <ul class="sectlevel2">
-<li><a href="#_introduction_interoperability_goals">9.1. Introduction. Interoperability goals</a></li>
-<li><a href="#_test_definitions">9.2. Test Definitions</a></li>
-<li><a href="#_execution_and_results">9.3. Execution and Results</a></li>
-<li><a href="#_observations">9.4. Observations</a></li>
-</ul>
-</li>
-<li><a href="#_future_possibilities">10. Future possibilities.</a>
-<ul class="sectlevel2">
-<li><a href="#_extension_of_schema">10.1. Extension of schema</a></li>
-<li><a href="#_data_creation_and_editing">10.2. Data creation and editing</a></li>
-<li><a href="#_iho_outputs">10.3. IHO outputs</a>
-<ul class="sectlevel3">
-<li><a href="#_automation_of_as_construction">10.3.1. Automation of AS construction</a></li>
-<li><a href="#_support_for_multiple_languages">10.3.2. Support for multiple languages</a></li>
-<li><a href="#_use_of_gml">10.3.3. Use of GML</a></li>
-<li><a href="#_on_topology">10.3.4. On Topology</a></li>
-</ul>
-</li>
-<li><a href="#_ogc_outputs">10.4. OGC outputs</a>
-<ul class="sectlevel3">
-<li><a href="#_gml">10.4.1. GML</a></li>
-<li><a href="#_topology">10.4.2. Topology</a></li>
-<li><a href="#_definitions">10.4.3. Definitions</a></li>
-</ul>
-</li>
-<li><a href="#_document_contributor_contact_points_2">10.5. Document contributor contact points</a></li>
-</ul>
-</li>
-<li><a href="#references">11. References</a></li>
-<li><a href="#_terms_and_definitions">12. Terms and definitions</a>
-<ul class="sectlevel2">
-<li><a href="#_abbreviated_terms">12.1. Abbreviated terms</a></li>
-</ul>
-</li>
-<li><a href="#Overview">13. Overview</a></li>
-<li><a href="#ExampleClause">14. Example Clause</a>
-<ul class="sectlevel2">
-<li><a href="#_headlines">14.1. Headlines</a></li>
-<li><a href="#_figures">14.2. Figures</a></li>
-<li><a href="#_tables">14.3. Tables</a></li>
-<li><a href="#RecommendedAsciidocEnvironment">14.4. Recommended Asciidoc Environment</a>
-<ul class="sectlevel3">
-<li><a href="#_installation_on_macos_and_linux">14.4.1. Installation on MacOS and Linux</a></li>
-<li><a href="#_installation_on_windows">14.4.2. Installation on Windows</a></li>
-<li><a href="#_using_asciidoctor_with_atom">14.4.3. Using Asciidoctor with Atom</a></li>
-</ul>
-</li>
-<li><a href="#_asciidoc_conversion">14.5. Asciidoc Conversion</a></li>
-<li><a href="#_source_code">14.6. Source Code</a></li>
-<li><a href="#_asciidoctor_syntax_help">14.7. Asciidoc(tor) Syntax Help</a></li>
-<li><a href="#_citations">14.8. Citations</a></li>
-</ul>
-</li>
-<li><a href="#MathExample">15. Example using equations in asciidoc</a>
-<ul class="sectlevel2">
-<li><a href="#_compiling_asciidoc_with_equations">15.1. Compiling AsciiDoc with Equations</a></li>
-<li><a href="#_generate_equations">15.2. Generate Equations</a></li>
+<li><a href="#_compiling_asciidoc_with_equations">9.1. Compiling AsciiDoc with Equations</a></li>
+<li><a href="#_generate_equations">9.2. Generate Equations</a></li>
 </ul>
 </li>
 <li><a href="#AbstractTestSuite">Appendix A: Abstract Test Suite</a>
@@ -778,8 +727,6 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <div class="sect1">
 <h2 id="_background_2"><a class="anchor" href="#_background_2"></a>6. Background</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_unclos"><a class="anchor" href="#_unclos"></a>6.1. UNCLOS</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -790,213 +737,55 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </li>
 </ul>
 </div>
-</div>
 <div class="sect2">
-<h3 id="_iho_s_121_history"><a class="anchor" href="#_iho_s_121_history"></a>6.2. IHO / S-121 history</h3>
+<h3 id="_iho_ogc_history"><a class="anchor" href="#_iho_ogc_history"></a>6.1. IHO / OGC History</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Description of the S-100</p>
+<p>Short history of each organisation</p>
 </li>
 <li>
 <p>S-100 for the unitiated, how PS development works, registry, feature catalogue etc.</p>
 </li>
 <li>
-<p>S-121 for the unitiated, brief description of model</p>
+<p>OGC, description of architectural baseline</p>
 </li>
 <li>
-<p>Where is S-121 now?</p>
+<p>Why do we need this document?</p>
 </li>
 <li>
-<p>User Perspective?</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_ogc_pilot_project"><a class="anchor" href="#_ogc_pilot_project"></a>7. OGC Pilot Project</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_pilot_project_objectives_and_goals"><a class="anchor" href="#_pilot_project_objectives_and_goals"></a>7.1. Pilot Project objectives and Goals</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Description of goals and objectives for the project.</p>
-</li>
-<li>
-<p>How it is achieved</p>
+<p>The User Perspective</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_structure_of_project"><a class="anchor" href="#_structure_of_project"></a>7.2. Structure of project</h3>
+<h3 id="_structure_of_document"><a class="anchor" href="#_structure_of_document"></a>6.2. Structure of Document</h3>
 
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_deliverables"><a class="anchor" href="#_deliverables"></a>8. Deliverables</h2>
+<h2 id="_specific_topics"><a class="anchor" href="#_specific_topics"></a>7. Specific Topics</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_gml_application_schema"><a class="anchor" href="#_gml_application_schema"></a>8.1. GML Application schema</h3>
-<div class="sect3">
-<h4 id="_background_to_gml_as_for_s_121"><a class="anchor" href="#_background_to_gml_as_for_s_121"></a>8.1.1. Background to GML AS for S-121</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Description of IHO S-100 GML schema development</p>
-</li>
-<li>
-<p>Use, how S-100 is structured and the constraints</p>
-</li>
-<li>
-<p>Unique challenges with S-121</p>
-</li>
-<li>
-<p>Approach taken in project</p>
-</li>
-<li>
-<p>Current client implementations, also where S-100 adoption is</p>
-</li>
-<li>
-<p>What the S-100 profile provides</p>
-</li>
-<li>
-<p>S-100 for the uninitiated</p>
-</li>
-<li>
-<p>S-121 for the unitiated (model description)</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_structure_of_schema"><a class="anchor" href="#_structure_of_schema"></a>8.1.2. Structure of schema</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>modular structure</p>
-</li>
-<li>
-<p>features, information types, geometry</p>
-</li>
-<li>
-<p>how features are aggregated into collections</p>
-</li>
-<li>
-<p>how topology and geometry is dealt with</p>
-</li>
-<li>
-<p>Use cases</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_example_uses"><a class="anchor" href="#_example_uses"></a>8.1.3. Example uses</h4>
-
-</div>
-</div>
-<div class="sect2">
-<h3 id="_client_sdi"><a class="anchor" href="#_client_sdi"></a>8.2. Client SDI</h3>
-<div class="sect3">
-<h4 id="_current_state"><a class="anchor" href="#_current_state"></a>8.2.1. Current state</h4>
-
-</div>
-<div class="sect3">
-<h4 id="_user_perspective"><a class="anchor" href="#_user_perspective"></a>8.2.2. User perspective</h4>
-<div class="sect4">
-<h5 id="_cots"><a class="anchor" href="#_cots"></a>COTS</h5>
-
-</div>
-<div class="sect4">
-<h5 id="_freeopen_source"><a class="anchor" href="#_freeopen_source"></a>Free/open Source</h5>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_interoperability_testing"><a class="anchor" href="#_interoperability_testing"></a>9. Interoperability Testing</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_introduction_interoperability_goals"><a class="anchor" href="#_introduction_interoperability_goals"></a>9.1. Introduction. Interoperability goals</h3>
+<h3 id="_interoperability"><a class="anchor" href="#_interoperability"></a>7.1. Interoperability</h3>
 
 </div>
 <div class="sect2">
-<h3 id="_test_definitions"><a class="anchor" href="#_test_definitions"></a>9.2. Test Definitions</h3>
+<h3 id="_encodings"><a class="anchor" href="#_encodings"></a>7.2. Encodings</h3>
 
 </div>
 <div class="sect2">
-<h3 id="_execution_and_results"><a class="anchor" href="#_execution_and_results"></a>9.3. Execution and Results</h3>
+<h3 id="_topology"><a class="anchor" href="#_topology"></a>7.3. Topology</h3>
 
 </div>
 <div class="sect2">
-<h3 id="_observations"><a class="anchor" href="#_observations"></a>9.4. Observations</h3>
-
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_future_possibilities"><a class="anchor" href="#_future_possibilities"></a>10. Future possibilities.</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_extension_of_schema"><a class="anchor" href="#_extension_of_schema"></a>10.1. Extension of schema</h3>
+<h3 id="_terms_definitions_and_the_registry"><a class="anchor" href="#_terms_definitions_and_the_registry"></a>7.4. Terms, Definitions and the Registry</h3>
 
 </div>
 <div class="sect2">
-<h3 id="_data_creation_and_editing"><a class="anchor" href="#_data_creation_and_editing"></a>10.2. Data creation and editing</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_iho_outputs"><a class="anchor" href="#_iho_outputs"></a>10.3. IHO outputs</h3>
-<div class="sect3">
-<h4 id="_automation_of_as_construction"><a class="anchor" href="#_automation_of_as_construction"></a>10.3.1. Automation of AS construction</h4>
-
-</div>
-<div class="sect3">
-<h4 id="_support_for_multiple_languages"><a class="anchor" href="#_support_for_multiple_languages"></a>10.3.2. Support for multiple languages</h4>
-
-</div>
-<div class="sect3">
-<h4 id="_use_of_gml"><a class="anchor" href="#_use_of_gml"></a>10.3.3. Use of GML</h4>
-
-</div>
-<div class="sect3">
-<h4 id="_on_topology"><a class="anchor" href="#_on_topology"></a>10.3.4. On Topology</h4>
-
-</div>
-</div>
-<div class="sect2">
-<h3 id="_ogc_outputs"><a class="anchor" href="#_ogc_outputs"></a>10.4. OGC outputs</h3>
-<div class="sect3">
-<h4 id="_gml"><a class="anchor" href="#_gml"></a>10.4.1. GML</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Feedback on use of GML for meeting the objectives of the project.</p>
-</li>
-<li>
-<p>How IHO S-100 GML profile ties in with boader use and any issues that generates</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_topology"><a class="anchor" href="#_topology"></a>10.4.2. Topology</h4>
-
-</div>
-<div class="sect3">
-<h4 id="_definitions"><a class="anchor" href="#_definitions"></a>10.4.3. Definitions</h4>
-
-</div>
-</div>
-<div class="sect2">
-<h3 id="_document_contributor_contact_points_2"><a class="anchor" href="#_document_contributor_contact_points_2"></a>10.5. Document contributor contact points</h3>
+<h3 id="_document_contributor_contact_points_2"><a class="anchor" href="#_document_contributor_contact_points_2"></a>7.5. Document contributor contact points</h3>
 <div class="paragraph">
 <p>All questions regarding this document should be directed to the editor or the contributors:</p>
 </div>
@@ -1028,120 +817,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </div>
 </div>
 <div class="sect1">
-<h2 id="references"><a class="anchor" href="#references"></a>11. References</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The following normative documents are referenced in this document.</p>
-</div>
-<div class="ulist">
-<div class="title">NOTE: 	Only normative standards are referenced here, e.g. OGC, ISO or other SDO standards. All other references are listed in the bibliography. Example:</div>
-<ul>
-<li>
-<p><a href="https://portal.opengeospatial.org/files/?artifact_id=38867&amp;version=2">OGC 06-121r9, OGC® Web Services Common Standard</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_terms_and_definitions"><a class="anchor" href="#_terms_and_definitions"></a>12. Terms and definitions</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard <a href="https://portal.opengeospatial.org/files/?artifact_id=38867&amp;version=2">OGC 06-121r9</a> shall apply. In addition, the following terms and definitions apply.</p>
-</div>
-<div class="dlist">
-<div class="title">NOTE: Delete the first three terms because they are examples.</div>
-<dl>
-<dt class="hdlist1">&#9679; coordinate reference system </dt>
-<dd>
-<p>coordinate system that is related to the real world by a datum term name (source: ISO 19111)</p>
-</dd>
-<dt class="hdlist1">&#9679; portrayal </dt>
-<dd>
-<p>presentation of information to humans (source: ISO 19117)</p>
-</dd>
-<dt class="hdlist1">&#9679; LiDAR </dt>
-<dd>
-<p><strong>Light Detection and Ranging</strong>&#8201;&#8212;&#8201;a common method for acquiring point clouds through aerial, terrestrial, and mobile acquisition methods.</p>
-</dd>
-<dt class="hdlist1">&#9679; term name </dt>
-<dd>
-<p>text of the definition</p>
-</dd>
-<dt class="hdlist1">&#9679; term name|synonym  </dt>
-<dd>
-<p>text of the definition</p>
-</dd>
-</dl>
-</div>
-<div class="sect2">
-<h3 id="_abbreviated_terms"><a class="anchor" href="#_abbreviated_terms"></a>12.1. Abbreviated terms</h3>
-<div class="ulist">
-<div class="title">NOTE: The abbreviated terms clause gives a list of the abbreviated terms and the symbols necessary for understanding this document. All symbols should be listed in alphabetical order. Some more frequently used abbreviated terms are provided below as examples.</div>
-<ul>
-<li>
-<p>COM	Component Object Model</p>
-</li>
-<li>
-<p>CORBA	Common Object Request Broker Architecture</p>
-</li>
-<li>
-<p>COTS	Commercial Off The Shelf</p>
-</li>
-<li>
-<p>DCE	Distributed Computing Environment</p>
-</li>
-<li>
-<p>DCOM	Distributed Component Object Model</p>
-</li>
-<li>
-<p>IDL	Interface Definition Language</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Overview"><a class="anchor" href="#Overview"></a>13. Overview</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="title">Instructions</div>
-<div class="paragraph">
-<p>This 4-overview.adoc file helps the reader to better understand the various sections of the ER. It should be written like an extended table of contents.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="paragraph">
-<p>Section 5 introduces the problem of vector tiling. It describes the situation prior to the testbed and discusses the requirements set by the sponsors.</p>
-</div>
-<div class="paragraph">
-<p>Section 6 discusses the mathematical model behind the various tiling strategies. It provides recommendations on preferred strategies.</p>
-</div>
-<div class="paragraph">
-<p>Section 7 presents the solution developed in this testbed. A clear mapping of requirements to solutions is provided. The section shows additional work is required to implement 3D tiles, which could not be addressed in this activity.</p>
-</div>
-<div class="paragraph">
-<p>Section 8 provides a summary of the main findings and discusses links to other tasks such as WFS 3.0 and WMTS 2.3.</p>
-</div>
-<div class="paragraph">
-<p>Annex A provides code snippets that illustrate the functionality of the Vector Tiling Engine and shall help to implement similar technology. It briefly discusses the key issues we experienced during implementation.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="ExampleClause"><a class="anchor" href="#ExampleClause"></a>14. Example Clause</h2>
+<h2 id="ExampleClause"><a class="anchor" href="#ExampleClause"></a>8. Example Clause</h2>
 <div class="sectionbody">
 <div class="admonitionblock note">
 <table>
@@ -1159,13 +835,13 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </table>
 </div>
 <div class="sect2">
-<h3 id="_headlines"><a class="anchor" href="#_headlines"></a>14.1. Headlines</h3>
+<h3 id="_headlines"><a class="anchor" href="#_headlines"></a>8.1. Headlines</h3>
 <div class="paragraph">
 <p>All headlines are marked by "=" signs. The top level in each each file starts with level 2 ("=="). Important: For whatever strange reason, headings in annexes are marked differently.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_figures"><a class="anchor" href="#_figures"></a>14.2. Figures</h3>
+<h3 id="_figures"><a class="anchor" href="#_figures"></a>8.2. Figures</h3>
 <div class="paragraph">
 <p>If you want to reference a figure by using a figure number, it is important to use the following syntax. The figure identifier for <a href="#img_mindMap">Figure 1</a> is the first statement of the header. Please adapt the width as appropriate, but generally a width of 800 is good for landscape-shaped figures and 400 is good for portrait-shaped ones.</p>
 </div>
@@ -1180,7 +856,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </div>
 </div>
 <div class="sect2">
-<h3 id="_tables"><a class="anchor" href="#_tables"></a>14.3. Tables</h3>
+<h3 id="_tables"><a class="anchor" href="#_tables"></a>8.3. Tables</h3>
 <div class="paragraph">
 <p>Tables are easy to deal with as long as you keep them simple! To add a table, please use the following syntax.</p>
 </div>
@@ -1241,12 +917,12 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </div>
 </div>
 <div class="sect2">
-<h3 id="RecommendedAsciidocEnvironment"><a class="anchor" href="#RecommendedAsciidocEnvironment"></a>14.4. Recommended Asciidoc Environment</h3>
+<h3 id="RecommendedAsciidocEnvironment"><a class="anchor" href="#RecommendedAsciidocEnvironment"></a>8.4. Recommended Asciidoc Environment</h3>
 <div class="paragraph">
 <p>We recommend to use <a href="http://asciidoctor.org">asciidoctor</a> and <a href="http://asciidoctor.org/docs/convert-asciidoc-to-pdf/">asciidoctor-pdf</a> in combination with the <a href="https://atom.io">Atom</a> editor.</p>
 </div>
 <div class="sect3">
-<h4 id="_installation_on_macos_and_linux"><a class="anchor" href="#_installation_on_macos_and_linux"></a>14.4.1. Installation on MacOS and Linux</h4>
+<h4 id="_installation_on_macos_and_linux"><a class="anchor" href="#_installation_on_macos_and_linux"></a>8.4.1. Installation on MacOS and Linux</h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1259,7 +935,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </div>
 </div>
 <div class="sect3">
-<h4 id="_installation_on_windows"><a class="anchor" href="#_installation_on_windows"></a>14.4.2. Installation on Windows</h4>
+<h4 id="_installation_on_windows"><a class="anchor" href="#_installation_on_windows"></a>8.4.2. Installation on Windows</h4>
 <div class="paragraph">
 <p>We have made best experiences with the following steps:</p>
 </div>
@@ -1298,7 +974,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </div>
 </div>
 <div class="sect3">
-<h4 id="_using_asciidoctor_with_atom"><a class="anchor" href="#_using_asciidoctor_with_atom"></a>14.4.3. Using Asciidoctor with Atom</h4>
+<h4 id="_using_asciidoctor_with_atom"><a class="anchor" href="#_using_asciidoctor_with_atom"></a>8.4.3. Using Asciidoctor with Atom</h4>
 <div class="paragraph">
 <p>In Atom, you should install the following packages:</p>
 </div>
@@ -1327,7 +1003,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </div>
 </div>
 <div class="sect2">
-<h3 id="_asciidoc_conversion"><a class="anchor" href="#_asciidoc_conversion"></a>14.5. Asciidoc Conversion</h3>
+<h3 id="_asciidoc_conversion"><a class="anchor" href="#_asciidoc_conversion"></a>8.5. Asciidoc Conversion</h3>
 <div class="paragraph">
 <p>In order to achieve a uniform look-and-feel of all ERs in both HTML and PDF, we have provided a css and theme file. The following commands can be used to convert the ER:</p>
 </div>
@@ -1341,7 +1017,7 @@ asciidoctor -r asciidoctor-bibtex -a linkcss -a stylesheet=rocket-panda.css -a s
 </div>
 </div>
 <div class="sect2">
-<h3 id="_source_code"><a class="anchor" href="#_source_code"></a>14.6. Source Code</h3>
+<h3 id="_source_code"><a class="anchor" href="#_source_code"></a>8.6. Source Code</h3>
 <div class="paragraph">
 <p>You can add code snippets using the following syntax:</p>
 </div>
@@ -1398,13 +1074,13 @@ asciidoctor -r asciidoctor-bibtex -a linkcss -a stylesheet=rocket-panda.css -a s
 </div>
 </div>
 <div class="sect2">
-<h3 id="_asciidoctor_syntax_help"><a class="anchor" href="#_asciidoctor_syntax_help"></a>14.7. Asciidoc(tor) Syntax Help</h3>
+<h3 id="_asciidoctor_syntax_help"><a class="anchor" href="#_asciidoctor_syntax_help"></a>8.7. Asciidoc(tor) Syntax Help</h3>
 <div class="paragraph">
 <p>Is available e.g. here: <a href="http://asciidoctor.org/docs/" class="bare">http://asciidoctor.org/docs/</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_citations"><a class="anchor" href="#_citations"></a>14.8. Citations</h3>
+<h3 id="_citations"><a class="anchor" href="#_citations"></a>8.8. Citations</h3>
 <div class="paragraph">
 <p>Please use the following syntax to insert citations anywhere in the text:</p>
 </div>
@@ -1475,7 +1151,7 @@ tylesheet=rocket-panda.css -a stylesdir=./resources/stylesheets er.adoc</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="MathExample"><a class="anchor" href="#MathExample"></a>15. Example using equations in asciidoc</h2>
+<h2 id="MathExample"><a class="anchor" href="#MathExample"></a>9. Example using equations in asciidoc</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You need to define the equation either as an asciimath inline macro:</p>
@@ -1530,7 +1206,7 @@ tylesheet=rocket-panda.css -a stylesdir=./resources/stylesheets er.adoc</p>
 <p>That means that the stem is not supported by the asciidoctor-pdf engine, i.e. you cannot produce pdf documents that way. We recommend that you rather use screenshots from the rendered html version for your pdf.</p>
 </div>
 <div class="sect2">
-<h3 id="_compiling_asciidoc_with_equations"><a class="anchor" href="#_compiling_asciidoc_with_equations"></a>15.1. Compiling AsciiDoc with Equations</h3>
+<h3 id="_compiling_asciidoc_with_equations"><a class="anchor" href="#_compiling_asciidoc_with_equations"></a>9.1. Compiling AsciiDoc with Equations</h3>
 <div class="paragraph">
 <p>To compile this example, you would use</p>
 </div>
@@ -1541,7 +1217,7 @@ tylesheet=rocket-panda.css -a stylesdir=./resources/stylesheets er.adoc</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_generate_equations"><a class="anchor" href="#_generate_equations"></a>15.2. Generate Equations</h3>
+<h3 id="_generate_equations"><a class="anchor" href="#_generate_equations"></a>9.2. Generate Equations</h3>
 <div class="paragraph">
 <p>If you need some help generating equations, <a href="http://asciimath.org">http://asciimath.org</a> offers a great equation building and compiling tool and provides further information.</p>
 </div>
@@ -1938,7 +1614,7 @@ owsServiceProvider.xsd</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-07-03 14:17:18 +0100
+Last updated 2019-07-03 14:24:17 +0100
 </div>
 </div>
 <style>
