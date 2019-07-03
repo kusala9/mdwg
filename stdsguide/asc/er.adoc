@@ -37,7 +37,7 @@
 // The title here should match the title on the first page.
 // *****************************************************************************
 
-:title: OGC Maritime Limits and Boundaries Pilot Project
+:title: Guide to USe of Marine Geospatial Standards in the Marine Domain
 
 // *****************************************************************************
 // Document identifier, with format "OGC YY-nnn" (e.g., OGC 17-067).
@@ -73,11 +73,11 @@
 // *****************************************************************************
 // Editors please do not alter the administrative front matter below.
 // *****************************************************************************
-:category: OGC Public Engineering Report
+:category: OGC Public Document
 :publicationDate: YYYY-MM-DD
 :approvalDate: YYYY-MM-DD
 :referenceURLID: ID
-:copyrightYear: 2018
+:copyrightYear: 2019
 //
 :titletext: {title}
 :doctype: book
@@ -127,12 +127,6 @@ include::0-preface.adoc[]
 include::1-summary.adoc[]
 
 include::15-mainbody.adoc[]
-
-include::2-references.adoc[]
-
-include::3-terms.adoc[]
-
-include::4-overview.adoc[]
 
 // *****************************************************************************
 // Editors organize included-file inputs as appropriate starting here.
