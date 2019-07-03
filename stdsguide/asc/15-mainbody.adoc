@@ -1,0 +1,102 @@
+//
+// this is the main body of the document
+//
+
+== Intro and Summary
+== This Document
+== Background
+=== UNCLOS
+* Short history of the relevant parts of UNCLOS, the parts relevant to this project
+* Wider applicability, e.g. MSP and other marine uses. How OGC can fit into that, MSDI as the broad term for these uses of data
+
+=== IHO / S-121 history
+* Description of the S-100
+* S-100 for the unitiated, how PS development works, registry, feature catalogue etc.
+* S-121 for the unitiated, brief description of model
+* Where is S-121 now?
+* User Perspective?
+
+
+== OGC Pilot Project
+=== Pilot Project objectives and Goals
+* Description of goals and objectives for the project.
+* How it is achieved
+
+=== Structure of project
+
+== Deliverables
+=== GML Application schema
+==== Background to GML AS for S-121
+* Description of IHO S-100 GML schema development
+* Use, how S-100 is structured and the constraints
+* Unique challenges with S-121
+* Approach taken in project
+* Current client implementations, also where S-100 adoption is
+* What the S-100 profile provides
+* S-100 for the uninitiated
+* S-121 for the unitiated (model description)
+
+==== Structure of schema
+
+* modular structure
+* features, information types, geometry
+* how features are aggregated into collections
+* how topology and geometry is dealt with
+* Use cases
+
+==== Example uses
+
+
+=== Client SDI
+==== Current state
+==== User perspective
+===== COTS 
+===== Free/open Source
+
+== Interoperability Testing
+
+=== Introduction. Interoperability goals
+
+=== Test Definitions
+
+=== Execution and Results
+
+=== Observations
+
+== Future possibilities.
+
+=== Extension of schema
+
+=== Data creation and editing
+
+=== IHO outputs
+
+==== Automation of AS construction
+
+==== Support for multiple languages
+
+==== Use of GML
+
+==== On Topology
+
+=== OGC outputs
+
+==== GML
+* Feedback on use of GML for meeting the objectives of the project.
+* How IHO S-100 GML profile ties in with boader use and any issues that generates
+
+==== Topology
+
+==== Definitions
+
+===     Document contributor contact points
+
+All questions regarding this document should be directed to the editor or the contributors:
+
+*Contacts*
+[width="80%",options="header",caption=""]
+|====================
+|Name |Organization | Role
+|((Jonathan Pritchard)) | (( IIC Technologies )) | ((Editor))
+|====================
+
