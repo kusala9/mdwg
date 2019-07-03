@@ -7,4 +7,6 @@ doc:
 
 git:
 	git commit -a
+
+push:
 	git push
