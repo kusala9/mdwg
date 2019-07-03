@@ -1,2 +1,2 @@
 # mdwg
-Marine Domain Working Group github repo
+this is the Marine Domain Working Group github repo. Various things lie within....
